@@ -7,3 +7,11 @@ test('renders learn react link', () => {
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+it('app has rendered', () => {
+  expect('App').toBe('App');
+});
+
+it('div has classname of App', () => {
+  expect('<div className="App">').toMatch(/className="App"/);
+});
